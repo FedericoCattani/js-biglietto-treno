@@ -17,11 +17,20 @@ let finalPriceOld = basicTicketprice - discountedTicketOld;
 console.log('Sconto applicato al biglietto €', discountedTicket);
 console.log('Sconto applicato al biglietto €', discountedTicketOld);
 
+
 if (ageUser < 18){
   document.getElementById('ticket').innerHTML = 'Prezzo finale €' + Math.round(finalPrice);
 } else if (ageUser > 65){
   document.getElementById('ticket').innerHTML = 'Prezzo finale €' + Math.round(finalPriceOld);
+}else{
+ document.getElementById('ticket').innerHTML = 'Prezzo finale €' + Math.round(basicTicketprice);
 }
 
-document.getElementById('ticket').innerHTML = 'Prezzo finale €' + Math.round(basicTicketprice);
+ 
+ 
+
+
+
+
+
 
